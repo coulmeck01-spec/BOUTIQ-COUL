@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="BOUTIQ COUL, votre boutique en Côte d'Ivoire.">
+<title>BOUTIQ COUL - Votre boutique</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #171717;
+  line-height: 1.6;
+}
+
+header {
+  background: #111;
+  color: white;
+  padding: 18px;
+}
+
+nav {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.hero {
+  padding: 45px 0;
+}
+
+h1 {
+  font-size: 38px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 27px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  margin: 6px 5px 6px 0;
+  background: #111;
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+.whatsapp {
+  background: #20b85a;
+  color: white;
+}
+
+section {
+  margin-bottom: 45px;
+}
+
+.catalogue {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+}
+
+.product {
+  padding: 18px;
+  border: 1px solid #ddd;
+  border-radius: 9px;
+  margin-top: 15px;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  font-size: 16px;
+}
+
+.step {
+  background: white;
+  padding: 15px;
+  border-radius: 9px;
+  margin: 12px 0;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+footer p {
+  margin: 5px;
+}
+
+.floating-whatsapp {
+  position: fixed;
+  bottom: 18px;
+  right: 15px;
+  background: #20b85a;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 31px;
+  }
+
+  nav {
+    align-items: flex-start;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="#">BOUTIQ COUL</a>
+    <a href="#catalogue">Catalogue</a>
+    <a href="#commande">Comment commander</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero">
+  <p><strong>VOTRE BOUTIQUE EN CÔTE D'IVOIRE</strong></p>
+
+  <h1>Trouvez votre prochain téléphone en toute confiance.</h1>
+
+  <p>
+    Découvrez notre catalogue et contactez-nous directement sur
+    WhatsApp pour connaître les prix et les disponibilités.
+  </p>
+
+  <a class="btn" href="#catalogue">Voir le catalogue</a>
+
+  <a class="btn whatsapp"
+     href="https://wa.me/2250504346892?text=Bonjour%20BOUTIQ%20COUL%2C%20je%20souhaite%20des%20informations."
+     target="_blank" rel="noopener">
+    Commander sur WhatsApp
+  </a>
+</section>
+
+<section id="catalogue" class="catalogue">
+  <h2>Notre catalogue</h2>
+
+  <p>
+    Les produits seront ajoutés après vérification de leur
+    disponibilité en Côte d'Ivoire.
+  </p>
+
+  <input
+    type="search"
+    id="recherche"
+    placeholder="Rechercher un téléphone..."
+    aria-label="Rechercher un téléphone">
+
+  <div id="produits">
+    <div class="product">
+      <h3>Catalogue en cours de préparation</h3>
+      <p>
+        Vous recherchez un modèle précis ?
+        Contactez-nous sur WhatsApp pour demander sa disponibilité.
+      </p>
+
+      <a class="btn whatsapp"
+         href="https://wa.me/2250504346892?text=Bonjour%2C%20je%20recherche%20un%20telephone."
+         target="_blank" rel="noopener">
+        Demander un modèle
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="commande">
+  <h2>Comment commander</h2>
+
+  <div class="step">
+    <h3>1. Choisissez votre téléphone</h3>
+    <p>Indiquez-nous le modèle que vous recherchez.</p>
+  </div>
+
+  <div class="step">
+    <h3>2. Vérifiez la disponibilité</h3>
+    <p>
+      Nous devons confirmer le prix, le stock, la livraison
+      et les conditions de garantie avant votre commande.
+    </p>
+  </div>
+
+  <div class="step">
+    <h3>3. Confirmez votre commande</h3>
+    <p>
+      Passez commande après avoir reçu et vérifié
+      les informations nécessaires.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>Besoin d'aide ?</h2>
+
+  <p>
+    Écrivez-nous directement pour demander un produit,
+    connaître son prix ou poser une question.
+  </p>
+
+  <a class="btn whatsapp"
+     href="https://wa.me/2250504346892?text=Bonjour%20BOUTIQ%20COUL"
+     target="_blank" rel="noopener">
+    Contacter BOUTIQ COUL
+  </a>
+</section>
+
+</main>
+
+<footer>
+  <h3>BOUTIQ COUL</h3>
+  <p>Boutique en Côte d'Ivoire</p>
+  <p>WhatsApp : 05 04 34 68 92</p>
+  <p>Prix et disponibilités à confirmer avant commande.</p>
+</footer>
+
+<a class="floating-whatsapp"
+   href="https://wa.me/2250504346892?text=Bonjour%20BOUTIQ%20COUL"
+   target="_blank" rel="noopener">
+  WhatsApp
+</a>
+
+<script>
+const recherche = document.getElementById("recherche");
+
+recherche.addEventListener("input", function () {
+  const texte = recherche.value.toLowerCase();
+
+  document.querySelectorAll(".product").forEach(function (produit) {
+    produit.style.display =
+      produit.textContent.toLowerCase().includes(texte)
+        ? "block"
+        : "none";
+  });
+});
+</script>
+
+</body>
+</html>
